@@ -3,7 +3,7 @@ import { MongoClient } from "mongodb";
 import path from "path";
 
 async function start() {
-  const url = process.env.URI;
+  const url = `mongodb+srv://sathvikpalivela0:${process.env.URI}@cluster0.a5lk5xi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
   const client = new MongoClient(url);
 
   await client.connect();
