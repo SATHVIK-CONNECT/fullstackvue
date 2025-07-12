@@ -9,12 +9,12 @@ import NotfoundPage from "./pages/NotfoundPage.vue";
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCwOwhJRhzhPXgY5jCcNhfWhi-iVb7UfPU",
-  authDomain: "vuesite-a50d0.firebaseapp.com",
-  projectId: "vuesite-a50d0",
-  storageBucket: "vuesite-a50d0.firebasestorage.app",
-  messagingSenderId: "223305690764",
-  appId: "1:223305690764:web:b967921cc7aa42de9655a9",
+  apiKey: ${{ secrets.API_KEY }},
+  authDomain: ${{ secrets.AUTH_DOMAIN }},
+  projectId: ${{ secrets.PROJECT_ID }},
+  storageBucket: ${{ secrets.STORAGE_BUCKET }},
+  messagingSenderId: ${{ secrets.MESSAGE_SENDER_ID }},
+  appId: ${{ secrets.APPID }},
 };
 
 initializeApp(firebaseConfig);
