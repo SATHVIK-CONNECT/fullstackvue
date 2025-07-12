@@ -3,7 +3,7 @@ import { MongoClient } from "mongodb";
 import path from "path";
 
 async function start() {
-  const url = `process.env.URI`;
+  const url = `${process.env.URI}`;
   const client = new MongoClient(url);
 
   await client.connect();
