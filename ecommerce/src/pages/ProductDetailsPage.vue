@@ -58,7 +58,7 @@ export default {
       const email = prompt("Please enter the email:");
       const auth = getAuth();
       const actionCodeSettings = {
-        url: `https://full-stack-vue-nllq.onrender.com/products/${this.$route.params.productId}`,
+        url: `https://fullstackvue.onrender.com/products/${this.$route.params.productId}`,
         handleCodeInApp: true,
       };
       await sendSignInLinkToEmail(auth, email, actionCodeSettings);
