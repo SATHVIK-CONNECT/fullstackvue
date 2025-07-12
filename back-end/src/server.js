@@ -3,7 +3,7 @@ import { MongoClient } from "mongodb";
 import path from "path";
 
 async function start() {
-  const url = `mongodb+srv://sathvikpalivela0:ricky@cluster0.a5lk5xi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
+  const url = `${{ secrets.URI }}`;
   const client = new MongoClient(url);
 
   await client.connect();
