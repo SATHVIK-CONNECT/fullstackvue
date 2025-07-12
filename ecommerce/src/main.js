@@ -9,12 +9,12 @@ import NotfoundPage from "./pages/NotfoundPage.vue";
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: ${{ secrets.API_KEY }},
-  authDomain: ${{ secrets.AUTH_DOMAIN }},
-  projectId: ${{ secrets.PROJECT_ID }},
-  storageBucket: ${{ secrets.STORAGE_BUCKET }},
-  messagingSenderId: ${{ secrets.MESSAGE_SENDER_ID }},
-  appId: ${{ secrets.APPID }},
+  apiKey: process.env.API_KEY,
+  authDomain: process.env.AUTH_DOMAIN,
+  projectId: process.env.PROJECT_ID,
+  storageBucket: process.env.sTORAGE_BUCKET,
+  messagingSenderId: processs.env.MESSAGE_SENDER_ID,
+  appId: process.env.APPID,
 };
 
 initializeApp(firebaseConfig);
